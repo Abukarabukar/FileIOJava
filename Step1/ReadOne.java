@@ -6,7 +6,7 @@ public class ReadOne
 {
     public static void main(String[] args)
     {
-        /* We must use a try/catch when reading 
+        /*1 We must use a try/catch when reading
          * in a file in case the file is not found
          */
         try {
