@@ -9,12 +9,14 @@ public class ReadTwo
     public static void main(String[] args)
     {
         try {
-            Scanner fileIn = new Scanner(new File("input.txt"));
 
-            while (fileIn.hasNext()) 
+            File starting = new File(System.getProperty("user.dir"));
+            Scanner fileIn = new Scanner(new File(starting, "/Step2/input.txt"));
+
+            while (fileIn.hasNext())
             {
                 // Reads the entire line as a string
-                String lineIn = fileIn.nextLine(); 
+                String lineIn = fileIn.nextLine();
                 // Split the line into a String array
                 String[] input = lineIn.split(",");
                 int sum = 0;

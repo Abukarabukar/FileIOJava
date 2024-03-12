@@ -12,7 +12,8 @@ public class ReadThree
         try{
             System.out.print("Writing to file ... ");
             // Create the file to write to
-            PrintWriter fileOut = new PrintWriter("output.txt");
+            File starting = new File(System.getProperty("user.dir"));
+            PrintWriter fileOut = new PrintWriter(new File("/Users/abukar/Projects/FileIOJava/Step3/Output.txt"));
             // Write text just like we would to the console
             fileOut.println("Hello ");
             // Clode out file
